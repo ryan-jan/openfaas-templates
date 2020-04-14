@@ -1,11 +1,13 @@
-# OpenFaaS PowerCLI VEBA Template
+# Custom OpenFaaS Templates
 
-This is a custom OpenFaaS PowerCLI template for use with the VMware vCenter Event Broker Appliance
-fling. The template is written as a PowerShell [advanced function](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_functions_advanced?view=powershell-7) which allows you to make use of things such as PowerShell's built in `Write-Verbose` and `Write-Debug` CmdLets etc.
+This repository contains my custom OpenFaaS templates. You can pull them all using `faas-cli` as follows.
 
-The template also includes a helper function to connect to vCenter server systems using OpenFaaS secrets to
-store the credentials and to help keep your main function concise.
+``` shell
+faas-cli template pull https://github.com/ryan-jan/openfaas-templates
+```
 
-## Getting Started
+You can also use the `--filter` parameter to pull only a single template, specifying the template by name.
 
-TBC
+``` shell
+faas-cli template pull https://github.com/ryan-jan/openfaas-templates --filter powercli-veba
+```
