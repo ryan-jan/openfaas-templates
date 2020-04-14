@@ -1,2 +1,3 @@
 language: powercli
 fprocess: xargs pwsh ./PowerCLIVeba.ps1
+handler_folder: handler
