@@ -1,0 +1,2 @@
+language: powercli
+fprocess: xargs pwsh ./PowerCLIVeba.ps1
